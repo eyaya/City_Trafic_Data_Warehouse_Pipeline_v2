@@ -1,0 +1,12 @@
+open_trafic_dwh:
+  outputs:
+    dev:
+      dbname: open_trafic
+      host: localhost
+      pass: Nigielove_21
+      port: 5432
+      schema: dbt_trafic
+      threads: 4
+      type: postgres
+      user: eyaya
+  target: dev
