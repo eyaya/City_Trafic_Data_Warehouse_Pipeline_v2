@@ -1,0 +1,33 @@
+version: 2
+
+sources:
+  - name: open_trafic
+    description: "DWH database containing the data"
+    database: open_trafic
+    schema: airflow_schema
+    tables:
+      - name: trafic_data
+        description: "Vehicles table"
+        columns:
+          - name: id # required
+            description: unique identifier for the vehicle
+          - name: track_id
+            description: id of the track the vehicle is on
+          - name: vehicle_type
+            description: type of the vehicle
+          - name: traveled_d
+            description: distance traveled by the vehicle
+          - name: avg_speed
+            description: average speed of the vehicle
+          - name: lat
+            description: latitude of the vehicle
+          - name: lon
+            description: longitude of the vehicle
+          - name: speed
+            description: speed of the vehicle at the given time
+          - name: lon_acc
+            description: loan account of the vehicle
+          - name: lat_acc
+            description: latitude of the vehicle at the given time
+          - name: time
+            description: time of the record
